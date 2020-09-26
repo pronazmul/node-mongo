@@ -7,7 +7,6 @@ app.get('/', (req, res)=>{
 })
 
 app.get('/love', (req, res)=>{
-    // const love = {name: 'sania', age:22, gender:'female'}
     res.send("Love you Sania")
 })
 
