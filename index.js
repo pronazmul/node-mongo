@@ -2,7 +2,13 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res)=>{
-    res.send("This is my first Programme In Node JS")
-} )
+    const love = {name: 'sania', age:22, gender:'female'}
+    res.send(love)
+})
 
-app.listen(3000, ()=> console.log('Programme Is Listening'))
+app.get('/love', (req, res)=>{
+    // const love = {name: 'sania', age:22, gender:'female'}
+    res.send("Love you Sania")
+})
+
+app.listen(4000, ()=> console.log('Port is Running'))
